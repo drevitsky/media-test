@@ -1,0 +1,5 @@
+export const INITIAL_REESTR = 'INITIAL_REESTR'
+export const SET_REESTR = 'SET_REEST'
+export const SET_REGION = 'SET_REGION'
+export const SET_ACTIVE_ITEM = 'SET_ACTIVE_ITEM'
+export const CHANGE_PAGE = 'CHANGE_PAGE'

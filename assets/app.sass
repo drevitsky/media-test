@@ -1,0 +1,92 @@
+@import ui/vars
+@import ui/reset
+@import ui/btn
+@import ui/mixin
+@import fonts
+@import lib/flexboxgrid
+@import ui/modal
+body
+  font-family: $mont
+  background: $very-light-pink-two
+  overflow-x: hidden
+  width: 100vw
+  #nuxt-loading
+    background: #1f4fa7
+    visibility: visible
+    opacity: 1
+    animation: none
+    &>div
+      border: .5rem solid #678fd7
+      border-left: .5rem solid #fff
+#__nuxt
+  +r(1800)
+    width: 1800px
+    @media (max-width: 767px)
+      width: auto
+      max-width: 1600
+      min-width: 320
+.flex
+  display: flex
+.wrap
+  flex-wrap: wrap
+.justify-between
+  justify-content: space-between
+.justify-center
+  justify-content: center
+.justify-end
+  justify-content: flex-end
+
+.container-fluid, .row
+  height: 100%
+  @media (max-width: 767px)
+    margin-right: 0
+    margin-left: 0
+.container-fluid
+  .row
+    > div
+      @media (max-width: 767px)
+        padding-right: 0
+        padding-left: 0
+.container
+  &-fluid
+    max-width: 1800px
+    width: 100%
+    padding: 0 50px
+    box-sizing: border-box
+    @media (max-width: 767px)
+      padding: 0 4%
+  &-padding
+    padding: 0 100px
+    @media (max-width: 767px)
+      padding: 0 4%
+
+a
+  color: $blue
+
+.heading
+  text-decoration: none
+  h1, h2
+    font-family: $fira
+    font-size: 39px
+    font-weight: 600
+    line-height: 0.82
+    color: $blue
+    @media (max-width: 767px)
+      font-size: 22px
+      line-height: 1
+a.heading:hover
+  text-decoration: underline
+.mobile
+  display: none!important
+  @media (max-width: 767px)
+    display: block!important
+.desctop
+  @media (max-width: 767px)
+    display: none!important
+.mobile_flex
+  display: none!important
+  @media (max-width: 767px)
+    display: flex!important
+.desctop_flex
+  @media (max-width: 767px)
+    display: none!important

@@ -1,0 +1,122 @@
+.v--modal-overlay
+  height: 100% !important
+.v--modal-background-click
+  display: flex
+  align-items: center
+  justify-content: center
+.v--modal-overlay .v--modal-box
+  top: inherit !important
+  left: inherit !important
+
+.modal
+  padding: 50px 95px !important
+  @media (max-width: 767px)
+    padding: 20px!important
+  &__header
+    margin-bottom: 45px
+    display: flex
+    @media (max-width: 767px)
+      margin-bottom: 15px
+    .close, .copy
+      cursor: pointer
+      display: flex
+      align-items: center
+      font-size: 16px
+      font-weight: 500
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.63
+      letter-spacing: normal
+      text-align: left
+      color: $blue
+      margin-right: 50px
+      @media (max-width: 767px)
+        font-size: 14px
+        line-height: 1
+      i
+        font-size: 25px
+        margin-right: 13px
+  &__content
+    h2
+      font-family: $fira
+      font-size: 32px
+      font-weight: 600
+      font-style: normal
+      font-stretch: condensed
+      line-height: 1.31
+      letter-spacing: normal
+      text-align: left
+      color: $black
+      margin-bottom: 45px
+      @media (max-width: 767px)
+        font-size: 18px
+        margin: 20px 0 45px
+    h3
+      font-family: $fira
+      font-size: 28px
+      font-weight: 600
+      font-style: normal
+      font-stretch: condensed
+      line-height: 1.43
+      letter-spacing: normal
+      text-align: left
+      color: $black
+      margin-bottom: 30px
+      @media (max-width: 767px)
+        font-size: 22px
+    p
+      font-size: 16px
+      font-weight: 500
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.63
+      letter-spacing: normal
+      text-align: left
+      color: $black
+      margin-bottom: 30px
+      @media (max-width: 767px)
+        font-size: 14px
+    .category
+      text-transform: uppercase
+      font-size: 12px
+      font-weight: bold
+      font-family: $mont
+      line-height: 3
+      letter-spacing: 3.6px
+      text-align: left
+      color: $red
+      position: relative
+      text-decoration: none
+    .date
+      font-size: 18px
+      font-family: $mont
+      font-weight: bold
+      line-height: 2
+      text-align: left
+      position: relative
+      color: $black
+      @media (max-width: 767px)
+        font-size: 16px
+    .view
+      position: relative
+      margin-left: 28px
+      display: flex
+      align-items: center
+      color: $greyish-brown
+      i
+        color: $greyish-brown
+        margin-right: 10px
+    .share
+      margin-top: 10px
+    a
+      color: $blue
+      margin-left: 5px
+    .btn-red:not(:hover)
+      color: #fff
+    .image
+      float: left
+      width: 350px
+      margin-bottom: 20px
+      margin-right: 20px
+      @media (max-width: 767px)
+        max-width: 100%
